@@ -14,8 +14,10 @@
             <td>{{$student->address}}</td>
             <td>{{$student->age}}</td>
             <td>{{$student->dob}}</td>
+            <td><a href="{{url('/edit/'.$student->id)}}">Edit</a></td>
+            <td><a href="{{url('/delete/'.$student->id)}}">delete</a></td>
 
     @endforeach
 </table>
-</body>//
+</body>
 </html>
